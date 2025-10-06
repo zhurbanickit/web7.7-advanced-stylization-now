@@ -69,12 +69,14 @@ body {
   align-items: center;
   position: relative;
   z-index: 2;
+  box-shadow: #f0057e 0px 0px 10px, #028dff 0px 0px 20px;
   /* max-width: 100%; */
   filter: contrast(200%) brightness(200%);
   border-radius: 10px;
   margin: 0;
-  padding: 0;
+  padding: 10px;
   background-color: #f0f0f0;
+  max-width: 60%;
 }
 
 .modal-backdrop {
@@ -85,6 +87,6 @@ body {
   bottom: 0;
   background: rgba(0, 0, 0, 0.5);
   z-index: 1;
-  filter: blur(1050px);
+
   max-width: 100%;
 }
