@@ -17,6 +17,7 @@ body {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
+  max-width: 100%;
 }
 
 .site-header {
@@ -51,3 +52,39 @@ body {
 }
 
 /* Создайте стили для модального окна согласно требованиям */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  z-index: 1000;
+  max-width: 100%;
+}
+
+.modal-content {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+  /* max-width: 100%; */
+  filter: contrast(200%) brightness(200%);
+  border-radius: 10px;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+.modal-backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  filter: blur(1050px);
+  max-width: 100%;
+}
